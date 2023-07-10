@@ -1,15 +1,24 @@
 <!DOCTYPE HTML> 
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
 <title>This is a Webpage practice </title>
 </head>
 
-<body>
+<body class="works_on_smartphone">
     <header>
-        <a href="#">Home</a>
-        <a href="./tweets.html">tweets</a>
+        <a href="./index.html"><img src="https://e7.pngegg.com/pngimages/276/100/png-clipart-multicolored-logo-graphic-design-design-computer-wallpaper-desktop-wallpaper.png" alt="logo" width="75" height="75"></a>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="./tweets.html">tweets</a>
+        </div>
+        
     </header>
     <main>
+        
         <article>
             <h1>Introduction to my HTML</h1>
 
@@ -26,17 +35,17 @@
 
             <p>See yo !</p>
         </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
+        
         <article>
             <table>
-                <tr>
-                    <th>Name</th>
-                    <th>age</th>
-                    <th>country</th>
-                </tr>
-                <!-- <tbody> -->
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Country</td>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>John</td>
                         <td>25</td>
@@ -57,9 +66,12 @@
                         <td>21</td>
                         <td>UK</td>
                     </tr>
-                <!-- </tbody> -->
+                </tbody>
             </table>
         </article>
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
     </main>
     
 
