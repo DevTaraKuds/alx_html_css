@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Source Sans Pro;
+        src: url(./assets/source-sans-pro/SourceSansPro-Black.otf);
+        src: url(./assets/source-sans-pro/SourceSansPro-Bold.otf);
+        src: url(./assets/source-sans-pro/SourceSansPro-ExtraLight.otf);
+        src: url(./assets/source-sans-pro/SourceSansPro-Light.otf);
+        src: url(./assets/source-sans-pro/SourceSansPro-Regular.otf);
+        src: url(./assets/source-sans-pro/SourceSansPro-Semibold.otf);
+}
+ 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Source Sans Pro;
+
+}
+main{
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    --padding:10%;
+    --max-width: 1000px;
+    --nav-gap: 40px;
+    --light: #fff;
+    --purple: #C271FF;
+    --dark: #071629;
+    --small-text:14px;
+    --medium-text:16px;
+    --big-text: 32px;
+    --extra-large:120px;
+    --margin:10px;
+    --grey:rgba(7, 22, 41, 0.50);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    color: var(--light);
+    height: 80px;
+    width: 100vw;
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+    height: 40px;
+
+}
+#nav-menu{
+    display: flex;
+    align-items: center;
+    gap: var(--nav-gap);
+    font-size: var(--small-text);
+}
+#banner{
+    background-image: url(./assets/Object.png);
+    background-size: cover;
+    color: var(--light);
+    padding-top: 200px;
+    text-align: center;
+}
+h1{
+    font-size: var(--extra-large);
+    margin: 0;
+    padding: 0;
+}
+.header2{
+    font-size: var(--big-text);
+    font-weight: 300;
+    line-height: normal;
+}
+strong{
+    color:var(--purple);
+}
+.cta{
+    border: none;
+    border-radius: 9999px;
+    background-color: var(--purple);
+    color: inherit;
+    font-weight: 600;
+    font-size: var(--medium-text);
+    padding: 5px 10px;
+    margin: 5%;
+    width: 162px;
+    height: 44px;
+}
+#hero-banner span{
+    font-size: var(--medium-text);
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 45px;
+}
+
+.card-container{
+ width: 100vw;
+ margin: auto;
+ padding: var(--padding);
+ text-align: center;
+ display: flex;
+ justify-content: space-between;
+ gap: 10;
+}
+
+.cards{
+    width: 150px;
+    height: inherit;
+
+}
+.cards img{
+    width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+#quote{
+    width:100vw;
+height: 392px;
+background-color: var(--purple);
+color: var(--light);
+padding: var(--padding);
+}
+
+#quote div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#videos{
+    text-align: center;
+    padding-top: var(--padding);
+}
+.video-frame{
+    width: 255px;
+height: inherit;
+    /* border: 1px solid black; */
+    text-align: left;
+    margin: 0 15px;
+}
+#videos .card-container{
+    flex-direction: row-reverse;
+}
+.video-info{
+    padding:0 15px;
+    
+
+}
+.video1{
+    background-image: url(assets/6.png);
+    background-size: cover;
+}
+.video2{
+    background-image: url(assets/7.png);
+    background-size: cover;
+}
+.video3{
+    background-image: url(assets/8.png);
+    background-size: cover;
+}
+.video4{
+    background-image: url(assets/9.png);
+    background-size: cover;
+}
+.video{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.rating-avater img{
+    width: 30px;
+    height: 30px;
+    font-size: var(--small-text);
+    margin-right: var(--margin) ;
+    border-radius: 50%;
+}
+.rating{
+    margin-top: var(--margin);
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+}
+.rating img{
+    width: 107px;
+height: 15px;
+flex-shrink: 0;
+}
+#membership{
+    padding-top: var(--padding);
+    background-color: var(--dark);
+    color: var(--light);
+}
+.member-card{
+    width: 257;
+    height: inherit;
+    padding: 3%;
+    margin: 0 10px;
+}
+#faq{
+    color: var(--dark);
+    text-align: center;
+    width: 100vw;
+    padding: 3% 15%;
+
+}
+#faq div{
+    display: flex;
+    flex-direction: row;
+}
+
+#faq div div {
+    flex-direction: column;
+    flex: auto;
+    margin: 5%;
+    text-align: left;
+    width: 350px;
+
+}
+#faq p{
+    color: var(--grey);
+}
+
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    padding: var(--padding);
+    text-align: center;
+    height: fit-content;
+    width: 100vw;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 5; */
+}
+footer span{
+    margin-top: 15px;
+    font-size: var(--small-text);
+    font-weight: 300;
+}
